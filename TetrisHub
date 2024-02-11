@@ -1,0 +1,49 @@
+local Player = game.Players.LocalPlayer
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Script loaded enjoy!",
+    Text = "made by: elrandom#1311", 
+    
+    Button1 = "Thanks!",
+    Duration = 20 
+    })
+    
+    
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Tetris Hub", "Serpent")
+
+    local Tab = Window:NewTab("Home")
+    local Section = Tab:NewSection("Information")
+
+    Section:NewLabel("Username: "..Player.Name..".")
+
+    Section:NewLabel("GamePlace ID: "..game.PlaceId.."")
+
+    Section:NewLabel("Thanks for using my scripthub!")
+
+    Section:NewButton("Copy discord", "my discord!", function()
+        setclipboard("elrandom#1311")
+    end)
+
+
+    local LaundryTab = Window:NewTab("Laundry Simulator")
+    local LaundrySection = LaundryTab:NewSection("Laundry Sim scripts")
+
+    LaundrySection:NewButton("Legal auto farm (with nitro speed boost)", "clicky button hehe", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/TTJfkprd"))()
+    end)
+    LaundrySection:NewButton("op farm gui", "click me", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Snxdfer/laundry/main/backup"))();
+    end)
+    LaundrySection:NewButton("Bloxain Hub", "click me", function()
+        loadstring(game:HttpGet("https://github.com/bloxain/Roblox/raw/main/Bloxhub.Lua"))()
+    end)
+
+    local MiscTab = Window:NewTab("Misc")
+    local MiscSection = MiscTab:NewSection("Misc")
+
+    MiscSection:NewButton("Nameless Admin", "really op", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()
+    end)
+    MiscSection:NewButton("ESP Hightlight with names", "ok", function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/UESP'))()
+    end)
